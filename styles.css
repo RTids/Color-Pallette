@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(5, 5, 39);
+	font-family: Poppins;
+	color: white;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+h1 {
+    position: absolute;
+    top: 75px;
+    font-size: 1.5em
+}
+
+.wrapper {
+	background-color: rgba(57, 56, 56, 0.536);
+	height: 60%;
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+    border-radius: 5px;
+}
+
+.searchWrapper {
+	margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+form {
+    display: flex;
+    gap: 1.5em;
+}
+
+input {
+    border-radius: 2px;
+    background-color: rgba(135, 134, 134, 0.081);
+    border: none;
+    width: 5em
+}
+
+select {
+    border: none;
+    text-align: center;
+    background-color: rgba(135, 134, 134, 0.081);
+    color: white;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+button {
+    width: 5em;
+    background-color: rgba(135, 134, 134, 0.081);
+    border: 1px solid rgba(186, 186, 186, 0.081);
+    color: white;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+#colorList {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+    padding: 0px 10px 10px 10px
+}
+
+.colorWrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	
+}
+
+.coloredBox {
+	flex-grow: 1;
+	margin: 10px 5px;
+}
+
+.hex {
+	font-size: 0.8em;
+	margin-bottom: 5px;
+}
+
+.colorOne {
+	background-color: red;
+}
+
+.colorTwo {
+	background-color: green;
+}
+
+.colorThree {
+	background-color: yellow;
+}
