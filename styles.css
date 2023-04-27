@@ -93,7 +93,7 @@ form {
 
 input {
     border-radius: 2px;
-    background-color: rgba(135, 134, 134, 0.081);
+    background-color: rgb(5, 5, 39);
     border: none;
     width: 5em
 }
