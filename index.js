@@ -8,6 +8,8 @@ const colorPicker = document.getElementById('colorPicker')
 const theme = document.getElementById('colorStyle')
 
 const getColors = () => {
+    const root = document.querySelector(':root')
+    const rootStyle = getComputedStyle(root)
     let selectedColor = ''
     selectedColor = colorPicker.value.slice(1)
     document.getElementById('colorList').innerHTML = ''
@@ -22,7 +24,8 @@ fetch(url, options)
                 <div class="hex">${data.colors[i].hex.value}</div>
             </div>
                 `
-                document.getElementById(`bgColor${i}`).style.backgroundColor = data.colors[i].hex.value
+                document.getElementById(`bgColor${i}`).style.backgroundColor = data.colors[i].hex.value;
+                root.style.setProperty('--glowColor', `#${selectedColor}`)
             }
     })
     
