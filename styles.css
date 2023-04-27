@@ -41,7 +41,7 @@ h1 {
 	position: absolute;
 	height: 61%;
 	width: 76%;
-	background-color: black;
+	background-color: transparent;
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
